@@ -13,28 +13,33 @@ structure. `Fare_rules_ft.txt` is then queried on `fare_id` and the time of depa
 on `fare_class`, and the cost of the fare is returned by the price field. 
 
 *[`stops.txt`](/files/stops.md)*
+
 `stop_id` 	| `stop_name` 	| `zone_id`	| ...										
 --------- 	| -----	 		| -----	   	| -----	
 1 			| 14th/Mission 	| - 		| ...
 1 			| 30th/Mission 	| - 		| ...
 
 *[`routes_ft.txt`](/files/routes_ft.md)*
+
 `route_id`	| `mode` 		| `fare_class` 	| `proof_of_payment`										
 ----------	| -----	 		| -----	    	| -----	
 MUN14  		| `local_bus` 	| muni-local 	| 1
 MUN14R 		| `rapid_bus` 	| muni-local 	| 1
 
 *[`fare_rules.txt`](/files/fare_rules.md)*
+
 `fare_id` 		| `route_id` 	| `contains_id`											
 --------- 		| -----	 		| -----	   		
 muni-allday	| muni-local 	| - 			
 
 *[`fare_rules_ft.txt`](/files/fare_rules_ft.md)*
+
 `fare_id` 		| `fare_class` 	| `start_time`	| `end_time`											
 --------- 		| -----	 		| -----	  		| ---- 		
 muni-allday		| muni-local 	| 000001 		| 240000 	
 
 *[`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)*
+
 `fare_class`	| `price` 	| `currency_type`	| `transfers`	| `transfer_duration`											
 --------- 		| -----	 	| -----	 			| -----			| -----  		
 muni-local		| 2.50 		| USD 				| -				| 5400
@@ -66,63 +71,74 @@ to get `reduced_rate` and `transfer_cost` from `fare_transfer_rules.txt`. In thi
 `reduced_rate` is True the and `fare_cost` is 0 indicating that there is no fee for the second 
 leg of this trip. 
 
-*First Leg*
+**First Leg**
 
 *[`stops.txt`](/files/stops.md)*
+
 `stop_id` 	| `stop_name` 				| `zone_id`	| ...										
 --------- 	| -----	 					| -----	   	| -----	
 1 			| Pacific Ave/166th St. 	| Tacoma	| ...
 2 			| Pacific Ave/112th St. 	| Seattle	| ...
 
 *[`routes_ft.txt`](/files/routes_ft.md)*
+
 `route_id`	| `mode` 		| `fare_class` 	| `proof_of_payment`										
 ----------	| -----	 		| -----	    	| -----	
 PT01  		| `local_bus` 	| Pierce 		| 1
 
 *[`fare_rules.txt`](/files/fare_rules.md)*
+
 `fare_id` 		| `route_id`	| `origin_id`	| `destination_id`										
 --------- 		| -----	 		| -----	   		| -----
 Pierce-Local	| PT0`			| Pierce		| Pierce
 
 *[`fare_rules_ft.txt`](/files/fare_rules_ft.md)*
+
 `fare_id` 		| `fare_class` 		| `start_time`	| `end_time`											
 --------- 		| -----	 			| -----	  		| ---- 		
 Pierce-Local	| Pierce-AllDay 	| 000001 		| 240000 	
 
 *[`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)*
+
 `fare_class`	| `price` 	| `currency_type`	| `transfers`	| `payment_method`											
 --------- 		| -----	 	| -----	 			| -----			| -----  		
 Pierce-Allday	| 2.00 		| USD 				| -				| 1
 
-*Second Leg*
+**Second Leg**
 
 *[`stops.txt`](/files/stops.md)*
+
 `stop_id` 	| `stop_name` 				| `zone_id`	| ...										
 --------- 	| -----	 					| -----	   	| -----	
 3 			| Pacific Ave/112th St. 	| Pierce	| ...
 4 			| SR 512 PNR			 	| Pierce	| ...
 
 *[`routes_ft.txt`](/files/routes_ft.md)*
+
 `route_id`	| `mode` 		| `fare_class` 	| `proof_of_payment`										
 ----------	| -----	 		| -----	    	| -----	
 PT53  		| local_bus 	| Pierce		| 1
 
 *[`fare_rules.txt`](/files/fare_rules.md)*
+
 `fare_id` 		| `route_id`	| ...										
 --------- 		| -----	 		| -----	   		
 Pierce-Local	| `PT04`		| ...
 
 *[`fare_rules_ft.txt`](/files/fare_rules_ft.md)*
+
 `fare_id` 		| `fare_class` 		| `start_time`	| `end_time`											
 --------- 		| -----	 			| -----	  		| ---- 		
 Pierce-Local	| Pierce-AllDay 	| 000001 		| 240000 	
 
 *[`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)*
+
 `fare_class`	| `price` 	| `currency_type`	| `transfers`	| `payment_method`											
 --------- 		| -----	 	| -----	 			| -----			| -----  		
 Pierce-Allday	| 2.00 		| USD 				| -				| 1
 
 *[`fare_transfer_rules.txt`](/files/fare_transfer_rules.md)*
+
 `from_fare_class` 	| `to_fare_class` 	| `sis_flat_fee`| `transfer_rule`											
 --------- 			| -----	 			| -----	  		| ---- 		
 Pierce-AllDay		| Pierce-AllDay 	| False			| 0	
@@ -132,23 +148,27 @@ Commuter rail frequently calculates fares based on the number of zones you trave
 can be specified as follows.
 
 *[`stops.txt`](/files/stops.md)*
+
 `stop_id` 	| `stop_name` 	| `zone_id`	| ...										
 --------- 	| -----	 		| -----	   	| -----	
 1 			| PIONEER_SQ 	| Seattle	| ...
 2			| EVERETT		| Everett	| ...
 
 *[`fare_rules.txt`](/files/fare_rules.md)*
+
 `fare_id` 		| `origin_id`	| `destination_id`										
 --------- 		| -----	 		| -----	   		
 SOUNDER-2Z	| Seattle		| Everett
 
 *[`fare_rules_ft.txt`](/files/fare_rules_ft.md)*
+
 `fare_id` 	| `fare_class` 		| `start_time`	| `end_time`											
 --------- 	| -----	 			| -----	  		| ---- 		
 SOUNDER-2Z	| Sounder-2Z-AllDay | 000001 		| 240000 	
 
 
 *[`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)*
+
 `fare_class`		| `price` 	| `currency_type`	| `transfers`	| `payment_method`											
 --------- 			| -----	 	| -----	 			| -----			| -----  		
 Sounder-2Z-AllDay	| 2.00 		| USD 				| -				| 1
@@ -159,17 +179,20 @@ a special case of zone-based fares, where every station has its own zone, and co
 specified as follows.  This example also shows the use of peak fares.
 
 *[`stops.txt`](/files/stops.md)*
+
 `stop_id` 	| `stop_name` 	| `zone_id`	| ...										
 --------- 	| -----	 		| -----	   	| -----	
 1 			| EMBARCADERO 	| B-EMB		| ...
 2			| FREMONT		| B-FRE		| ...
 
 *[`fare_rules.txt`](/files/fare_rules.md)*
+
 `fare_id` 	| `origin_id`	| `destination_id`										
 --------- 	| -----	 		| -----	   		
 B-EMB-FRE	| B-EMB		| B-FRE
 
 *[`fare_rules_ft.txt`](/files/fare_rules_ft.md)*
+
 `fare_id` 	| `fare_class` 		| `start_time`	| `end_time`											
 --------- 	| -----	 			| -----	  		| ---- 		
 B-EMB-FRE	| B-EMB-FRE-AllDay	| 000001 		| 240000 	
@@ -177,6 +200,7 @@ B-EMB-FRE	| B-EMB-FRE-AMPeak	| 070000 		| 083000
 B-EMB-FRE	| B-EMB-FRE-PMPeak	| 170000 		| 183000 
 
 *[`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)*
+
 `fare_class`		| `price` 	| `currency_type`	| `transfers`	| `payment_method`											
 --------- 			| -----	 	| -----	 			| -----			| -----  		
 B-EMB-FRE-AllDay	| 2.75 		| USD 				| -				| 1

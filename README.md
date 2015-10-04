@@ -1,37 +1,36 @@
----
 
-layout: spec
-title: GTFS-Plus
-version: 0.1.0
-updated: 23 September 2015
-created: 12 November 2007
-author:
+## GTFS-Plus
+
+A GTFS-based data transit network data standard suitable for dynamic transit modeling.
+
+*version*: 0.1.0
+*updated*: 09 July 2015
+*created*: 09 July 2015
+*authors*:
  - Stefan Coe (Puget Sound Regional Council)
  - Elizabeth Sall (UrbanLabs LLC)
  - Lisa Zorn (LMZ LLC)
  - Drew Cooper (San Francisco County Transportation Authority)
  
-summary: A GTFS-based data transit network data standard suitable for dynamic transit modeling.
+[issues]: https://github.com/osplanning-data-standards/GTFS-PLUS/issues
+[repo]: https://github.com/osplanning-data-standards/GTFS-PLUS
+[GTFS]: https://developers.google.com/transit/gtfs/reference
 
----
 
 NOTE: This is a draft specification and still under development. If you have comments
 or suggestions please file them in the [issue tracker][issues]. If you have
 explicit changes please fork the [git repo][repo] and submit a pull request.
 
-[issues]: https://github.com/osplanning-data-standards/GTFS-PLUS/issues
-[repo]: https://github.com/osplanning-data-standards/GTFS-PLUS
-[GTFS]: https://developers.google.com/transit/gtfs/reference
-
 ### Changelog
 
-- `0.1.0`: initial commit
+- `0.1.0`: initial commit; [Technical Memo Documentation](http://fast-trips.mtc.ca.gov/library/T2-NetworkDesign-WorkingCopy-July20
+15.pdf)
 
 # Specification
 
 A GTFS-PLUS transit network consists of required and optional data files that together 
 describe a network of transit service.  Files not denoted with `_ft` follow the same format 
-as the [General Transit Feed Specification - [GTFS].
+as the General Transit Feed Specification - [GTFS].
 
 A GTFS-PLUS transit network MUST include the following files:
 
