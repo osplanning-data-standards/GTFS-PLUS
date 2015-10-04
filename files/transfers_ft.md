@@ -17,9 +17,9 @@ Required Attributes	| Description
 `from_stop_id`		| From `stop_id` or park and ride / kiss and ride node.
 `to_stop_id`		| To `stop_id` or park and ride / kiss and ride node.
 `dist`				| Float walking distance in miles.
-`from_route_id`		| To `stop_id` or park and ride / kiss and ride node.
-`to_route_id`		| Float walking distance in miles.
-`schedule_precedence`| Can be either:
+`from_route_id`		| The `route_id` of the connection passengers are alighting.
+`to_route_id`		| The `route_id` of the connection that passengers are boarding.
+`schedule_precedence`| Indicates whether the first of second route whose schedule takes precedence and cannot be adjusted. Can be either:
 -					 |    from
 -					 |    to
 
