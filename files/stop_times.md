@@ -11,8 +11,8 @@ File MUST contain the following attributes:
 Required Attributes	| Description										
 ----------			| -------------		
 `trip_id`			| ID that uniquely identifies trip
-`arrival_time`		| Arrival time at a specific stop for a specific trip on a route in HHMMSS format measured from midnight.  For trips that span multiple dates, the time should be entered as a value greater than 2400000
-`departure_time`	| Departure time at a specific stop for a specific trip on a route in HHMMSS format measured from midnight.  For trips that span multiple dates, the time should be entered as a value greater than 2400000
+`arrival_time`		| Arrival time at a specific stop for a specific trip on a route in HH:MM:SS format measured from midnight.  For trips that span multiple dates, the time should be entered as a value greater than 2400000
+`departure_time`	| Departure time at a specific stop for a specific trip on a route in HH:MM:SS format measured from midnight.  For trips that span multiple dates, the time should be entered as a value greater than 2400000
 `stop_id`			| ID that uniquely identifies a stop
 `stop_sequence`		| Sequence number on a specific stop within a trip.  The first stop sequence is 1 and subsequent stops in the trip are sequentially numbered.
 

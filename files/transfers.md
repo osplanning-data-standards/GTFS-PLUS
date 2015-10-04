@@ -21,5 +21,5 @@ Required Attributes	| Description
 -					| 1 - timed transfer between two routes
 -					| 2 - requires a minimum amount of time, specified by `min_transfer_time`
 -					| 3 - transfers not possible between routes
-`min_transfer_time`	| Walking distance in miles between TAZ and stop.
+`min_transfer_time`	| When a connection between routes requires an amount of time between arrival and departure (`transfer_type`=2), this field defines the amount of time that must be available for a typical rider - in seconds.
 

@@ -23,4 +23,4 @@ Optional Attributes	| Description
 `population_density`| Float, people per square mile per mile. Can be measured for the area within ¼ mile, or other.
 `retail_density`	| Float, employees per square mile per mile. Can be measured for the area within ¼ mile, or other.
 `auto_capacity`		| Float, vehicles per hour per mile.  Can be measured for the actual roadway, an area within ¼ mile, or other.
-`indirecctness`		| Float, ratio of t
+`indirecctness`		| Float, ratio of manhattan distance to crow-fly distance.

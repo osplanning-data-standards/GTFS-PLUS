@@ -36,7 +36,7 @@ muni-allday	| muni-local 	| -
 
 `fare_id` 		| `fare_class` 	| `start_time`	| `end_time`											
 --------- 		| -----	 		| -----	  		| ---- 		
-muni-allday		| muni-local 	| 000001 		| 240000 	
+muni-allday		| muni-local 	| 00:00:01 		| 24:00:00 	
 
 *[`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)*
 
@@ -96,7 +96,7 @@ Pierce-Local	| PT0`			| Pierce		| Pierce
 
 `fare_id` 		| `fare_class` 		| `start_time`	| `end_time`											
 --------- 		| -----	 			| -----	  		| ---- 		
-Pierce-Local	| Pierce-AllDay 	| 000001 		| 240000 	
+Pierce-Local	| Pierce-AllDay 	| 00:00:01 		| 24:00:00 	
 
 *[`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)*
 
@@ -129,7 +129,7 @@ Pierce-Local	| `PT04`		| ...
 
 `fare_id` 		| `fare_class` 		| `start_time`	| `end_time`											
 --------- 		| -----	 			| -----	  		| ---- 		
-Pierce-Local	| Pierce-AllDay 	| 000001 		| 240000 	
+Pierce-Local	| Pierce-AllDay 	| 00:00:01 		| 24:00:00 	
 
 *[`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)*
 
@@ -164,7 +164,7 @@ SOUNDER-2Z	| Seattle		| Everett
 
 `fare_id` 	| `fare_class` 		| `start_time`	| `end_time`											
 --------- 	| -----	 			| -----	  		| ---- 		
-SOUNDER-2Z	| Sounder-2Z-AllDay | 000001 		| 240000 	
+SOUNDER-2Z	| Sounder-2Z-AllDay | 00:00:01 		| 24:00:00 	
 
 
 *[`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)*
@@ -195,9 +195,9 @@ B-EMB-FRE	| B-EMB		| B-FRE
 
 `fare_id` 	| `fare_class` 		| `start_time`	| `end_time`											
 --------- 	| -----	 			| -----	  		| ---- 		
-B-EMB-FRE	| B-EMB-FRE-AllDay	| 000001 		| 240000 	
-B-EMB-FRE	| B-EMB-FRE-AMPeak	| 070000 		| 083000 	
-B-EMB-FRE	| B-EMB-FRE-PMPeak	| 170000 		| 183000 
+B-EMB-FRE	| B-EMB-FRE-AllDay	| 00:00:01 		| 24:00:00 	
+B-EMB-FRE	| B-EMB-FRE-AMPeak	| 07:00:00 		| 08:30:00 	
+B-EMB-FRE	| B-EMB-FRE-PMPeak	| 17:00:00 		| 18:30:00 
 
 *[`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)*
 
