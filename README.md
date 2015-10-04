@@ -3,8 +3,8 @@
 
 A GTFS-based data transit network data standard suitable for dynamic transit modeling.
 
-**version**: 0.1.0  
-**updated**: 09 July 2015  
+**version**: 0.2.0  
+**updated**: 18 September 2015  
 **created**: 09 July 2015  
 **authors**:  
 
@@ -24,8 +24,9 @@ explicit changes please fork the [git repo][repo] and submit a pull request.
 
 ### Changelog
 
--  `0.1.0`: initial commit; [Technical Memo Documentation](http://fast-trips.mtc.ca.gov/library/T2-NetworkDesign-WorkingCopy-July20
-15.pdf)  
+-  `0.1.0`: initial commit; [Technical Memo Documentation](http://fast-trips.mtc.ca.gov/library/T2-NetworkDesign-WorkingCopy-July2015V0.1.pdf)  
+-  `0.2.0`: added additional required fields to [`transfers_ft.txt`](/files/transfers_ft.md) 
+in order to support route-specific transfers and time-point precedence. [Technical Memo Documentation](http://fast-trips.mtc.ca.gov/library/T2-NetworkDesign-StaticCopy-Sept2015V0.2.pdf)  
 
 # Specification
 

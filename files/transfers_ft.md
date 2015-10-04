@@ -17,6 +17,11 @@ Required Attributes	| Description
 `from_stop_id`		| From `stop_id` or park and ride / kiss and ride node.
 `to_stop_id`		| To `stop_id` or park and ride / kiss and ride node.
 `dist`				| Float walking distance in miles.
+`from_route_id`		| To `stop_id` or park and ride / kiss and ride node.
+`to_route_id`		| Float walking distance in miles.
+`schedule_precedence`| Can be either:
+-					 |    from
+-					 |    to
 
 File MAY contain the following attributes:
 
