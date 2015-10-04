@@ -3,14 +3,15 @@
 
 A GTFS-based data transit network data standard suitable for dynamic transit modeling.
 
-*version*: 0.1.0
-*updated*: 09 July 2015
-*created*: 09 July 2015
-*authors*:
- - Stefan Coe (Puget Sound Regional Council)
- - Elizabeth Sall (UrbanLabs LLC)
- - Lisa Zorn (LMZ LLC)
- - Drew Cooper (San Francisco County Transportation Authority)
+**version**: 0.1.0  
+**updated**: 09 July 2015  
+**created**: 09 July 2015  
+**authors**:  
+
+ * Stefan Coe (Puget Sound Regional Council)  
+ * Elizabeth Sall (UrbanLabs LLC)  
+ * Lisa Zorn (LMZ LLC)  
+ * Drew Cooper (San Francisco County Transportation Authority)  
  
 [issues]: https://github.com/osplanning-data-standards/GTFS-PLUS/issues
 [repo]: https://github.com/osplanning-data-standards/GTFS-PLUS
@@ -23,8 +24,8 @@ explicit changes please fork the [git repo][repo] and submit a pull request.
 
 ### Changelog
 
-- `0.1.0`: initial commit; [Technical Memo Documentation](http://fast-trips.mtc.ca.gov/library/T2-NetworkDesign-WorkingCopy-July20
-15.pdf)
+-  `0.1.0`: initial commit; [Technical Memo Documentation](http://fast-trips.mtc.ca.gov/library/T2-NetworkDesign-WorkingCopy-July20
+15.pdf)  
 
 # Specification
 
