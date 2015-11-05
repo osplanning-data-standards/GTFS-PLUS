@@ -3,7 +3,7 @@
 
 A GTFS-based data transit network data standard suitable for dynamic transit modeling.
 
-**version**: 0.2.2  
+**version**: 0.2.3  
 **updated**: 04 November 2015  
 **created**: 09 July 2015  
 **authors**:  
@@ -30,6 +30,8 @@ in order to support route-specific transfers and time-point precedence. [Technic
 -  `0.2.1`: changed time to be specified as HH:MM:SS from midnight instead of HH:MM:SS to be 
 consistent with [GTFS]
 -  `0.2.2`: updated file names that are not GTFS to ALL have `_ft` extension.
+-  `0.2.3`: added optional file `bike_access_ft.txt`
+
 
 # Specification
 
@@ -61,6 +63,7 @@ Filename 					| Description
 ----------					| -------------		
 [`transfers_ft.txt`](/files/transfers_ft.md)		| additional transit link information
 [`drive_access_ft.txt`](/files/drive_access_ft.md)		| drive access links
+[`bike_access_ft.txt`](/files/bike_access_ft.md)		| walk access links
 [`pnr_ft.txt`](/files/pnr_ft.md)							| park and ride access links
 [`knr_ft.txt`](/files/knr_ft.md)							| kiss and ride access links
 [`shapes.txt`](/files/shapes.md)					| transit route shape points
