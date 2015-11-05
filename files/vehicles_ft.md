@@ -1,6 +1,6 @@
 ## Vehicles
 
- *  Filename MUST be `vehicles.txt`
+ *  Filename MUST be `vehicles_ft.txt`
  *  File MUST contain a record for each vehicle type
  *  File MUST be a valid CSV file.
  *  The first line of each file MUST contain case-sensitive field names.

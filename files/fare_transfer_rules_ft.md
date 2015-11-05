@@ -2,7 +2,7 @@
 
 Examples of how to specify various fare schemes can be found in the [fares page](../fares.md).
 
- *  Filename MUST be `fare_transfer_rules.txt`
+ *  Filename MUST be `fare_transfer_rules_ft.txt`
  *  File MUST contain a record for each transfer rule for fares.
  *  File MUST be a valid CSV file.
  *  The first line of each file MUST contain case-sensitive field names.

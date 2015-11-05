@@ -3,8 +3,8 @@
 
 A GTFS-based data transit network data standard suitable for dynamic transit modeling.
 
-**version**: 0.2.1  
-**updated**: 02 October 2015  
+**version**: 0.2.2  
+**updated**: 04 November 2015  
 **created**: 09 July 2015  
 **authors**:  
 
@@ -29,6 +29,7 @@ explicit changes please fork the [git repo][repo] and submit a pull request.
 in order to support route-specific transfers and time-point precedence. [Technical Memo Documentation](http://fast-trips.mtc.ca.gov/library/T2-NetworkDesign-StaticCopy-Sept2015V0.2.pdf)  
 -  `0.2.1`: changed time to be specified as HH:MM:SS from midnight instead of HH:MM:SS to be 
 consistent with [GTFS]
+-  `0.2.2`: updated file names that are not GTFS to ALL have `_ft` extension.
 
 # Specification
 
@@ -40,7 +41,7 @@ A GTFS-PLUS transit network MUST include the following files:
 
 Filename 			| Description										
 ----------			| -------------										
-[`walk_access.txt`](/files/walk_access.md)	| walk access links									
+[`walk_access_ft.txt`](/files/walk_access_ft.md)	| walk access links									
 [`transfers.txt`](/files/transfers.md)		| transfer links									
 [`trips.txt`](/files/trips.md)				| transit vehicle trips								
 [`trips_ft.txt`](/files/trips_ft.md)		| additional transit vehicle trip information		
@@ -59,14 +60,14 @@ A GTFS-PLUS transit network MAY include the following files:
 Filename 					| Description										
 ----------					| -------------		
 [`transfers_ft.txt`](/files/transfers_ft.md)		| additional transit link information
-[`drive_access.txt`](/files/drive_access.md)		| drive access links
-[`pnr.txt`](/files/pnr.md)							| park and ride access links
-[`knr.txt`](/files/knr.md)							| kiss and ride access links
+[`drive_access_ft.txt`](/files/drive_access_ft.md)		| drive access links
+[`pnr_ft.txt`](/files/pnr_ft.md)							| park and ride access links
+[`knr_ft.txt`](/files/knr_ft.md)							| kiss and ride access links
 [`shapes.txt`](/files/shapes.md)					| transit route shape points
 [`fare_attributes.txt`](/files/fare_attributes.md)			| fare attributes
 [`fare_rules.txt`](/files/fare_rules.md)					| fare rules
 [`fare_rules_ft.txt`](/files/fare_rules_ft.md)				| additional fare rules
-[`fare_transfer_rules.txt`](/files/fare_transfer_rules.md)	| fare transfer rules
+[`fare_transfer_rules_ft.txt`](/files/fare_transfer_rules_ft.md)	| fare transfer rules
 
 # Fares
 

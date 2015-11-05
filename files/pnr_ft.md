@@ -1,7 +1,7 @@
 ## Park and Ride Lots
-Filename: `pnr.txt`
+Filename: `pnr_ft.txt`
 
- *  Filename MUST be `pnr.txt`
+ *  Filename MUST be `pnr_ft.txt`
  *  File MUST contain a record for each park and ride lot.
  *  File MUST be a valid CSV file.
  *  The first line of each file MUST contain case-sensitive field names.

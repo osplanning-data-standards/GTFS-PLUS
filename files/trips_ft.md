@@ -11,5 +11,5 @@ File MUST contain the following attributes:
 Required Attributes	| Description										
 ----------			| -------------		
 `trip_id`			| ID that uniquely identifies a vehicle trip
-`vehicle_name`		| Name of vehicle type, which is to match a description in [`vehicles.txt`](vehicles.md)
+`vehicle_name`		| Name of vehicle type, which is to match a description in [`vehicles_ft.txt`](vehicles_ft.md)
 

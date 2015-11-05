@@ -1,7 +1,7 @@
 ## Kiss and Ride Lots
-Filename: `knr.txt`
+Filename: `knr_ft.txt`
 
- *  Filename MUST be `knr.txt`
+ *  Filename MUST be `knr_ft.txt`
  *  File MUST contain a record for each kiss and ride lot.
  *  File MUST be a valid CSV file.
  *  The first line of each file MUST contain case-sensitive field names.

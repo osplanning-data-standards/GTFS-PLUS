@@ -1,5 +1,7 @@
 ##Fares
 
+***WARNING - THIS FILE NEEDS EXTENSIVE REVIEW AND CORRECTION***
+
 Fares can be quite complex.  This page illustrates examples of how to specify them.
 
 #### Single leg, no transfer, flat fare
