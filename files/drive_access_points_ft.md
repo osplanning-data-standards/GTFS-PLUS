@@ -1,8 +1,10 @@
-## Park and Ride Lots
-Filename: `pnr_ft.txt`
+## Drive Access Points
+Filename: `drive_access_points_ft.txt`
 
- *  Filename MUST be `pnr_ft.txt`
- *  File MUST contain a record for each park and ride lot.
+In order to be connected to the transit system, drive access points must be connected to transit stops in [`transfers_ft.txt`](/files/transfers_ft.md)
+
+ *  Filename MUST be `drive_access_points_ft.txt`
+ *  File MUST contain a record for each drive access point such as park and ride lots, hide and ride areas, and kiss and ride drop off areas.
  *  File MUST be a valid CSV file.
  *  The first line of each file MUST contain case-sensitive field names.
  *  Field names MUST NOT contain tabs, carriage returns or new lines.
@@ -20,11 +22,14 @@ File MAY contain the following attributes:
 Optional Attributes	| Description										
 ----------			| -------------		
 `name`				| String name of the lot.
-`capacity`			| Integer.  Represents number of parking spaces at park and ride.  If not specified, assumed to be infinite
-`overflow_capacity`	| Integer.  Represents “hide and ride” or unofficial parking availability in surrounding area.  If not specified, assumed to be zero.  
+`drop_off`			| Boolean, if not specified assumed to be true to indicated that drop-off/pick-ups are allowed.
+`capacity`			| Integer.  Represents number of parking spaces at park and ride.  If not specified, assumed to be zero.
 `hourly_cost`		| Integer, cents.  Hourly cost to park.
 `max_cost`			| Integer, cents. Maximum daily cost to park.
 `type`				| String, with possible values of: 
 -					|    surface
 -					|    underground
 -					|    structure
+-					|    street
+
+
