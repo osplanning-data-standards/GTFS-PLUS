@@ -14,14 +14,9 @@ File MUST contain the following attributes:
 
 Required Attributes	| Description										
 ----------			| -------------		
-`from_stop_id`		| From `stop_id` or park and ride / kiss and ride node.
-`to_stop_id`		| To `stop_id` or park and ride / kiss and ride node.
+`from_stop_id`		| From `stop_id` or park and ride / kiss and ride node. Can be null if a drive access point (KNR/PNR).
+`to_stop_id`		| To `stop_id` or park and ride / kiss and ride node. Can be null if a drive access point (KNR/PNR).
 `dist`				| Float walking distance in miles.
-`from_route_id`		| The `route_id` of the connection passengers are alighting.
-`to_route_id`		| The `route_id` of the connection that passengers are boarding.
-`schedule_precedence`| Indicates whether the first of second route whose schedule takes precedence and cannot be adjusted. Can be either:
--					 |    from
--					 |    to
 
 File MAY contain the following attributes:
 
@@ -32,3 +27,8 @@ Optional Attributes	| Description
 `retail_density`	| Float, employees per square mile per mile. Can be measured for the area within ¼ mile, or other.
 `auto_capacity`		| Float, vehicles per hour per mile.  Can be measured for the actual roadway, an area within ¼ mile, or other.
 `indirecctness`		| Float, ratio of the manhattan distance to crow-fly distance.
+`from_route_id`		| The `route_id` of the connection passengers are alighting, if route specific transfer. Null value assumed to be for all.
+`to_route_id`		| The `route_id` of the connection that passengers are boarding. Null value assumed to be for all.
+`schedule_precedence`| Indicates whether the first of second route whose schedule takes precedence and cannot be adjusted. Null value assumed that both are flexible. Can be either:
+-					 |    from
+-					 |    to

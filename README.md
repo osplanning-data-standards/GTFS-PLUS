@@ -3,8 +3,8 @@
 
 A GTFS-based data transit network data standard suitable for dynamic transit modeling.
 
-**version**: 0.2.3  
-**updated**: 04 November 2015  
+**version**: 0.2.4  
+**updated**: 05 November 2015  
 **created**: 09 July 2015  
 **authors**:  
 
@@ -31,7 +31,7 @@ in order to support route-specific transfers and time-point precedence. [Technic
 consistent with [GTFS]
 -  `0.2.2`: updated file names that are not GTFS to ALL have `_ft` extension.
 -  `0.2.3`: added optional file `bike_access_ft.txt`
-
+-  `0.2.4`: decreased ambiguity in `transfers_ft.txt` and changed fields related to schedule creation to be optional.
 
 # Specification
 
