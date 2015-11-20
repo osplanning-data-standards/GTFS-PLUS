@@ -17,7 +17,7 @@ Required Attributes	| Description
 -					|    Access
 -					|    Egress
 `dist`				| Drive distance in miles between TAZ and lot.
-`cost`				| Integer in cents.
+`cost`				| Float cost in the unit specified by `currency_type` variable in [`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)
 `travel_time`		| Float driving time in minutes between TAZ and lot.
 `start_time`		| HH:MM:SS from midnight.  If blank, it is assumed that this is the base condition and other time of days will override it.
 `end_time`			| HH:MM:SS from midnight.  If blank, it is assumed that this is the base condition and other time of days will override it.

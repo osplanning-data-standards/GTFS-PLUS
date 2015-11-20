@@ -3,8 +3,8 @@
 
 A GTFS-based data transit network data standard suitable for dynamic transit modeling.
 
-**version**: 0.2.5  
-**updated**: 05 November 2015  
+**version**: 0.2.6  
+**updated**: 20 November 2015  
 **created**: 09 July 2015  
 **authors**:  
 
@@ -33,7 +33,7 @@ consistent with [GTFS]
 -  `0.2.3`: added optional file `bike_access_ft.txt`
 -  `0.2.4`: decreased ambiguity in `transfers_ft.txt` and changed fields related to schedule creation to be optional.
 -  `0.2.5`: consolidated `knr_ft.txt` and `pnr_ft.txt` into `drive_access_points_ft.txt`
-
+-  `0.2.6`: make costs in consistent values across the specification, as defined in `fare_attributes_ft.md`. Fixes link to `fare_attributes_ft.txt`.
 
 # Specification
 
@@ -68,7 +68,7 @@ Filename 					| Description
 [`bike_access_ft.txt`](/files/bike_access_ft.md)		| walk access links
 [`drive_access_points_ft.txt`](/files/drive_access_points_ft.md) | park and ride access links
 [`shapes.txt`](/files/shapes.md)					| transit route shape points
-[`fare_attributes.txt`](/files/fare_attributes.md)			| fare attributes
+[`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)			| fare attributes
 [`fare_rules.txt`](/files/fare_rules.md)					| fare rules
 [`fare_rules_ft.txt`](/files/fare_rules_ft.md)				| additional fare rules
 [`fare_transfer_rules_ft.txt`](/files/fare_transfer_rules_ft.md)	| fare transfer rules
