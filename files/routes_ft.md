@@ -30,5 +30,4 @@ File MAY contain the following attributes:
 
 Optional Attributes	| Description										
 ----------			| -------------		
-`fare_class`		| A string that uniquely defines an agency and service type that has a uniform fare structure since multiple fare structures could exist within a single agency. Examples for Sound Transit could be `st_light_rail`, `st_commuter_rail`, or `st_bus`.
 `proof_of_payment`	| A boolean value indicating if the route has fare enforcement through random inspection (true) or if the driver oversees payment (false). 
