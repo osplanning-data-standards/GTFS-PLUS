@@ -3,8 +3,8 @@
 
 A GTFS-based data transit network data standard suitable for dynamic transit modeling.
 
-**version**: 0.2.7  
-**updated**: 24 November 2015  
+**version**: 0.2.8  
+**updated**: 02 February 2016  
 **created**: 09 July 2015  
 **authors**:  
 
@@ -35,6 +35,7 @@ consistent with [GTFS]
 -  `0.2.5`: consolidated `knr_ft.txt` and `pnr_ft.txt` into `drive_access_points_ft.txt`
 -  `0.2.6`: make costs in consistent values across the specification, as defined in `fare_attributes_ft.md`. Fixes link to `fare_attributes_ft.txt`.
 -  `0.2.7`: eliminates `fare_class` as an optional variable in `routes_ft.txt` to eliminate ambiguity
+-  `0.2.8`: requires `transfers_ft` because it has distance. Blank `schedule_precedence` is no precedence either way.  Defaults times in `fare_rules_ft` can have label `default`.
 
 # Specification
 
@@ -47,7 +48,8 @@ A GTFS-PLUS transit network MUST include the following files:
 Filename 			| Description										
 ----------			| -------------										
 [`walk_access_ft.txt`](/files/walk_access_ft.md)	| walk access links									
-[`transfers.txt`](/files/transfers.md)		| transfer links									
+[`transfers.txt`](/files/transfers.md)		| transfer links			
+[`transfers_ft.txt`](/files/transfers_ft.md)| additional transit link information						
 [`trips.txt`](/files/trips.md)				| transit vehicle trips								
 [`trips_ft.txt`](/files/trips_ft.md)		| additional transit vehicle trip information		
 [`routes.txt`](/files/routes.md)			| transit routes									
@@ -64,7 +66,6 @@ A GTFS-PLUS transit network MAY include the following files:
 
 Filename 					| Description										
 ----------					| -------------		
-[`transfers_ft.txt`](/files/transfers_ft.md)		| additional transit link information
 [`drive_access_ft.txt`](/files/drive_access_ft.md)		| drive access links
 [`bike_access_ft.txt`](/files/bike_access_ft.md)		| walk access links
 [`drive_access_points_ft.txt`](/files/drive_access_points_ft.md) | park and ride access links

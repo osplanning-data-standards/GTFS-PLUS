@@ -30,5 +30,6 @@ Optional Attributes	| Description
 `from_route_id`		| The `route_id` of the connection passengers are alighting, if route specific transfer. Null value assumed to be for all.
 `to_route_id`		| The `route_id` of the connection that passengers are boarding. Null value assumed to be for all.
 `schedule_precedence`| Indicates whether the first of second route whose schedule takes precedence and cannot be adjusted. Null value assumed that both are flexible. Can be either:
--					 |    from
--					 |    to
+-					 |    from route
+-					 |    to route
+-					 |	  -blank- indicates no precedence for either from or to route
