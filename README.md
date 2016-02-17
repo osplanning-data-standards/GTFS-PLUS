@@ -3,8 +3,8 @@
 
 A GTFS-based data transit network data standard suitable for dynamic transit modeling.
 
-**version**: 0.2.8  
-**updated**: 02 February 2016  
+**version**: 0.2.9 
+**updated**: 17 February 2016  
 **created**: 09 July 2015  
 **authors**:  
 
@@ -36,6 +36,7 @@ consistent with [GTFS]
 -  `0.2.6`: make costs in consistent values across the specification, as defined in `fare_attributes_ft.md`. Fixes link to `fare_attributes_ft.txt`.
 -  `0.2.7`: eliminates `fare_class` as an optional variable in `routes_ft.txt` to eliminate ambiguity
 -  `0.2.8`: requires `transfers_ft` because it has distance. Blank `schedule_precedence` is no precedence either way.  Defaults times in `fare_rules_ft` can have label `default`.
+-  `0.2.9`: many clarifications. Use `lot_lon` rather than `lot_long` in `drive_access_points_ft` for GTFS consistency.  
 
 # Specification
 
