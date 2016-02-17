@@ -14,8 +14,8 @@ File MUST contain the following attributes:
 
 Required Attributes	| Description										
 ----------			| -------------		
-`from_stop_id`		| From `stop_id` or park and ride / kiss and ride node. Can be null if a drive access point (KNR/PNR).
-`to_stop_id`		| To `stop_id` or park and ride / kiss and ride node. Can be null if a drive access point (KNR/PNR).
+`from_stop_id`		| From `stop_id` or park and ride / kiss and ride node.   Cannot be the same as `to_stop_id`.
+`to_stop_id`		| To `stop_id` or park and ride / kiss and ride node. Cannot be the same as `from_stop_id`.
 `dist`				| Float walking distance in miles.
 
 File MAY contain the following attributes:

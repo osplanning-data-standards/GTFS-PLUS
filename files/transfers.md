@@ -14,8 +14,8 @@ File MUST contain the following attributes:
  
 Required Attributes	| Description										
 ----------			| -------------		
-`from_stop_id`		| From `stop_id` or park and ride / kiss and ride node.
-`to_stop_id`		| To `stop_id` or park and ride / kiss and ride node.
+`from_stop_id`		| From `stop_id` or park and ride / kiss and ride node.  Cannot be the same as `to_stop_id`.
+`to_stop_id`		| To `stop_id` or park and ride / kiss and ride node. Cannot be the same as `from_stop_id`.
 `transfer_type`		| Type of transfer:
 -					| 0 / Empty - a recommended transfer point
 -					| 1 - timed transfer between two routes
