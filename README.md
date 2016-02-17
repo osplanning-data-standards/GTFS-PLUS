@@ -68,7 +68,7 @@ Filename 					| Description
 ----------					| -------------		
 [`drive_access_ft.txt`](/files/drive_access_ft.md)		| drive access links
 [`bike_access_ft.txt`](/files/bike_access_ft.md)		| walk access links
-[`drive_access_points_ft.txt`](/files/drive_access_points_ft.md) | park and ride access links
+[`drive_access_points_ft.txt`](/files/drive_access_points_ft.md) | park and ride access links; must be included if provide drive access links.
 [`shapes.txt`](/files/shapes.md)					| transit route shape points
 [`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)			| fare attributes
 [`fare_rules.txt`](/files/fare_rules.md)					| fare rules
