@@ -15,7 +15,7 @@ Required Attributes	| Description
 ----------			| -------------		
 `lot_id`			| Stop ID
 `lot_lat`			| Float.  Lot location latitude in WGS 84
-`lot_long`			| Float.  Lot location longitude in WGS 84
+`lot_lon`			| Float.  Lot location longitude in WGS 84
 
 File MAY contain the following attributes:
 
