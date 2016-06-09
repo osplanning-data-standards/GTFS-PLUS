@@ -58,7 +58,7 @@ Filename 			| Description
 [`stops.txt`](/files/stops.md)				| transit stops and stations						
 [`stops_ft.txt`](/files/stops_ft.md)		| additional transit stop and station information	
 [`stop_times.txt`](/files/stop_times.md)	| transit trip stop times							
-[`stop_times_ft.txt`](/files/stop_times.md)	| additional transit trip stop time information		
+[`stop_times_ft.txt`](/files/stop_times_ft.md)	| additional transit trip stop time information		
 [`vehicles_ft.txt`](/files/vehicles_ft.md)	| transit vehicles									
 [`agency.txt`](/files/agency.md)			| transit agency									
 [`calendar.txt`](/files/calendar.md)		| transit schedule calendar							
