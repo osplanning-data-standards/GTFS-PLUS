@@ -19,5 +19,5 @@ File MAY contain the following attributes:
 
 Optional Attributes		| Description										
 ----------				| -------------		
-`shape_dist_traveled`	| Distance from the first shape point as a real distance. Distance units must match those in [stop_times.md](stop_times.md).
+`shape_dist_traveled`	| Distance from the first shape point as a real distance. Distance units must match those in [stop_times.txt](stop_times.md).
 
