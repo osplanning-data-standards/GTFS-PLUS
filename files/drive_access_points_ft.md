@@ -9,6 +9,9 @@ In order to be connected to the transit system, drive access points must be conn
  *  The first line of each file MUST contain case-sensitive field names.
  *  Field names MUST NOT contain tabs, carriage returns or new lines.
 
+Kiss and ride is allowed iff `drop_off` == True (which is the default if not specified)
+Park and ride is allowed iff `capacity` > 0 (the default is zero)
+
 File MUST contain the following attributes:
 
 Required Attributes	| Description										
@@ -23,7 +26,7 @@ Optional Attributes	| Description
 ----------			| -------------		
 `name`				| String name of the lot.
 `drop_off`			| Boolean, if not specified assumed to be true to indicated that drop-off/pick-ups are allowed.
-`capacity`			| Integer.  Represents number of parking spaces at park and ride.  If not specified, assumed to be zero.
+`capacity`			| Integer.  Represents number of parking spaces at park and ride.  If not specified, assumed to be zero and no parking is allowed.
 `hourly_cost`		| Hourly cost to park in the unit specified by `currency_type` variable in [`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)
 `max_cost`			| Maximum daily cost to park  in the unit specified by `currency_type` variable in [`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)
 `type`				| String, with possible values of: 
