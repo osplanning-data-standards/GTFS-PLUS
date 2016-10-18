@@ -30,7 +30,8 @@ Required Attributes	| Description
 `transfers`			| Number of transfers permitted on this fare:
 -					| 0 - none
 -					| 1 - one
--					| 2 - two
+-					| 2 - two  
+-				    | (empty): If this field is empty, unlimited transfers are permitted  
 
 File MAY contain the following attributes:
 
