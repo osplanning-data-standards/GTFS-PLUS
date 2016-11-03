@@ -1,4 +1,4 @@
-##Fares
+﻿##Fares
 
 ***WARNING - THIS FILE NEEDS EXTENSIVE REVIEW AND CORRECTION***
 
@@ -11,8 +11,8 @@ that has flat fare system. First `fare_rules.txt` is queried on `route_id`, `ori
 `destination_zone` to return it’s `fare_id`.  In this case, Origin and destination zones 
 have values of None, which represent cases where stops are never used in a zonal fee 
 structure. `Fare_rules_ft.txt` is then queried on `fare_id` and the time of departure (>= to 
-`start_time`, <= `end_time`) to return `fare_class`. `Fare_attributes_ft.txt` is then queried 
-on `fare_class`, and the cost of the fare is returned by the price field. 
+`start_time`, <= `end_time`) to return `fare_period`. `Fare_attributes_ft.txt` is then queried 
+on `fare_period`, and the cost of the fare is returned by the price field. 
 
 *[`stops.txt`](/files/stops.md)*
 
@@ -23,7 +23,7 @@ on `fare_class`, and the cost of the fare is returned by the price field.
 
 *[`routes_ft.txt`](/files/routes_ft.md)*
 
-`route_id`	| `mode` 		| `fare_class` 	| `proof_of_payment`										
+`route_id`	| `mode` 		| `fare_period` 	| `proof_of_payment`										
 ----------	| -----	 		| -----	    	| -----	
 MUN14  		| `local_bus` 	| muni-local 	| 1
 MUN14R 		| `rapid_bus` 	| muni-local 	| 1
@@ -36,21 +36,21 @@ muni-allday	| muni-local 	| -
 
 *[`fare_rules_ft.txt`](/files/fare_rules_ft.md)*
 
-`fare_id` 		| `fare_class` 	| `start_time`	| `end_time`											
+`fare_id` 		| `fare_period` 	| `start_time`	| `end_time`											
 --------- 		| -----	 		| -----	  		| ---- 		
 muni-allday		| muni-local 	| 00:00:01 		| 24:00:00 	
 
 *[`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)*
 
-`fare_class`	| `price` 	| `currency_type`	| `transfers`	| `transfer_duration`											
+`fare_period`	| `price` 	| `currency_type`	| `transfers`	| `transfer_duration`											
 --------- 		| -----	 	| -----	 			| -----			| -----  		
 muni-local		| 2.50 		| USD 				| -				| 5400
 
 #### Two or more legs, transfer
 
 To capture the cost of this scenario, the cost of each leg is calculated using the same 
-method proposed for a single leg trip. We then use the from `fare_class` and the to 
-`fare_class` to get the `is_flat_fee` and `transfer_rule` attributes from 
+method proposed for a single leg trip. We then use the from `fare_period` and the to 
+`fare_period` to get the `is_flat_fee` and `transfer_rule` attributes from 
 `fare_transfer_rules.txt`. `is_flat_fee` is a boolean that indicates if the transfer is
 percentage- or flat-fee based. For example, if `is_flat_fee` is True, the fare for the 
 second leg of the trip is the amount in `tranfer_rule` (e.g., 1.50). To indicate a free 
@@ -63,12 +63,12 @@ calculated using Pierce Transit as an example. First, `fare_rules.txt` is querie
 this case, Origin and destination have zones but are the same because these stops need 
 zones for Sound Transit, our regional express bus service. `Fare_rules_ft.txt` is then 
 queried on `fare_id` and the time of departure (>= to `start_time`, <= `end_time`) to return 
-`fare_class`. `Fare_attributes_ft.txt` is then queried on `fare_class`, and the cost of the fare 
+`fare_period`. `Fare_attributes_ft.txt` is then queried on `fare_period`, and the cost of the fare 
 is returned by the `price` field. 
 
 The next step is to determine the transfer rule for this particular transfer. We use the 
 `route_id` of the second leg to get the `fare_id` which, along with departure time, is used 
-to get `fare_class` from `fare_rules_ft.txt`. The `from_fare_class`  and the `to_fare_class` are used 
+to get `fare_period` from `fare_rules_ft.txt`. The `from_fare_period`  and the `to_fare_period` are used 
 to get `reduced_rate` and `transfer_cost` from `fare_transfer_rules.txt`. In this case 
 `reduced_rate` is True the and `fare_cost` is 0 indicating that there is no fee for the second 
 leg of this trip. 
@@ -84,7 +84,7 @@ leg of this trip.
 
 *[`routes_ft.txt`](/files/routes_ft.md)*
 
-`route_id`	| `mode` 		| `fare_class` 	| `proof_of_payment`										
+`route_id`	| `mode` 		| `fare_period` 	| `proof_of_payment`										
 ----------	| -----	 		| -----	    	| -----	
 PT01  		| `local_bus` 	| Pierce 		| 1
 
@@ -96,13 +96,13 @@ Pierce-Local	| PT0`			| Pierce		| Pierce
 
 *[`fare_rules_ft.txt`](/files/fare_rules_ft.md)*
 
-`fare_id` 		| `fare_class` 		| `start_time`	| `end_time`											
+`fare_id` 		| `fare_period` 		| `start_time`	| `end_time`											
 --------- 		| -----	 			| -----	  		| ---- 		
 Pierce-Local	| Pierce-AllDay 	| 00:00:01 		| 24:00:00 	
 
 *[`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)*
 
-`fare_class`	| `price` 	| `currency_type`	| `transfers`	| `payment_method`											
+`fare_period`	| `price` 	| `currency_type`	| `transfers`	| `payment_method`											
 --------- 		| -----	 	| -----	 			| -----			| -----  		
 Pierce-Allday	| 2.00 		| USD 				| -				| 1
 
@@ -117,7 +117,7 @@ Pierce-Allday	| 2.00 		| USD 				| -				| 1
 
 *[`routes_ft.txt`](/files/routes_ft.md)*
 
-`route_id`	| `mode` 		| `fare_class` 	| `proof_of_payment`										
+`route_id`	| `mode` 		| `fare_period` 	| `proof_of_payment`										
 ----------	| -----	 		| -----	    	| -----	
 PT53  		| local_bus 	| Pierce		| 1
 
@@ -129,19 +129,19 @@ Pierce-Local	| `PT04`		| ...
 
 *[`fare_rules_ft.txt`](/files/fare_rules_ft.md)*
 
-`fare_id` 		| `fare_class` 		| `start_time`	| `end_time`											
+`fare_id` 		| `fare_period` 		| `start_time`	| `end_time`											
 --------- 		| -----	 			| -----	  		| ---- 		
 Pierce-Local	| Pierce-AllDay 	| 00:00:01 		| 24:00:00 	
 
 *[`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)*
 
-`fare_class`	| `price` 	| `currency_type`	| `transfers`	| `payment_method`											
+`fare_period`	| `price` 	| `currency_type`	| `transfers`	| `payment_method`											
 --------- 		| -----	 	| -----	 			| -----			| -----  		
 Pierce-Allday	| 2.00 		| USD 				| -				| 1
 
 *[`fare_transfer_rules.txt`](/files/fare_transfer_rules.md)*
 
-`from_fare_class` 	| `to_fare_class` 	| `sis_flat_fee`| `transfer_rule`											
+`from_fare_period` 	| `to_fare_period` 	| `sis_flat_fee`| `transfer_rule`											
 --------- 			| -----	 			| -----	  		| ---- 		
 Pierce-AllDay		| Pierce-AllDay 	| False			| 0	
 
@@ -164,14 +164,14 @@ SOUNDER-2Z	| Seattle		| Everett
 
 *[`fare_rules_ft.txt`](/files/fare_rules_ft.md)*
 
-`fare_id` 	| `fare_class` 		| `start_time`	| `end_time`											
+`fare_id` 	| `fare_period` 		| `start_time`	| `end_time`											
 --------- 	| -----	 			| -----	  		| ---- 		
 SOUNDER-2Z	| Sounder-2Z-AllDay | 00:00:01 		| 24:00:00 	
 
 
 *[`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)*
 
-`fare_class`		| `price` 	| `currency_type`	| `transfers`	| `payment_method`											
+`fare_period`		| `price` 	| `currency_type`	| `transfers`	| `payment_method`											
 --------- 			| -----	 	| -----	 			| -----			| -----  		
 Sounder-2Z-AllDay	| 2.00 		| USD 				| -				| 1
 
@@ -195,7 +195,7 @@ B-EMB-FRE	| B-EMB		| B-FRE
 
 *[`fare_rules_ft.txt`](/files/fare_rules_ft.md)*
 
-`fare_id` 	| `fare_class` 		| `start_time`	| `end_time`											
+`fare_id` 	| `fare_period` 		| `start_time`	| `end_time`											
 --------- 	| -----	 			| -----	  		| ---- 		
 B-EMB-FRE	| B-EMB-FRE-AllDay	| 00:00:01 		| 24:00:00 	
 B-EMB-FRE	| B-EMB-FRE-AMPeak	| 07:00:00 		| 08:30:00 	
@@ -203,7 +203,7 @@ B-EMB-FRE	| B-EMB-FRE-PMPeak	| 17:00:00 		| 18:30:00
 
 *[`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)*
 
-`fare_class`		| `price` 	| `currency_type`	| `transfers`	| `payment_method`											
+`fare_period`		| `price` 	| `currency_type`	| `transfers`	| `payment_method`											
 --------- 			| -----	 	| -----	 			| -----			| -----  		
 B-EMB-FRE-AllDay	| 2.75 		| USD 				| -				| 1
 B-EMB-FRE-AMPeak	| 4.75 		| USD 				| -				| 1
