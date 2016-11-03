@@ -13,8 +13,8 @@ File MUST contain the following attributes:
 
 Required Attributes	| Description										
 ----------			| -------------		
-`from_fare_class`	| An ID that identifies the `fare_class` that the passenger is coming from.  
-`to_fare_class`		| An ID that identifies the `fare_class` that the passenger is going to.  
+`from_fare_period`	| An ID that identifies the `fare_period` that the passenger is coming from.  
+`to_fare_period`	| An ID that identifies the `fare_period' that the passenger is going to.  
 `transfer_fare_type` |   One of:
  - | `transfer_cost`:  assumes that the full value fare is not paid again  
  - | `transfer_discount`:   is a subtraction from the cumulative fare  
