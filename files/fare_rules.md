@@ -1,4 +1,4 @@
-## Fare rules
+## Fare Rules
 
 Specifies how fares in the fare attributes file apply to an itinerary by O/D station, zones, or route.
 
@@ -11,10 +11,10 @@ Examples of how to specify various fare schemes can be found in the [fares page]
  *  Field names MUST NOT contain tabs, carriage returns or new lines.
 
 The combination of `route_id`, `origin_id`, and `destination_id` will be used to match a `fare_id` to a transit trip, in this order. The first match on this list will win.  
- 1  Matching `route_id`, `origin_id` and `destination_id`  
- 2  Matching `route_id` only (no `origin_id` or `destination_id` specified)  
- 3  Matching `origin_id` and `destination_id` only (no `route_id` specified)  
- 4  No match (e.g. `fare_id` specified with no other columns)  
+ 1.  Matching `route_id`, `origin_id` and `destination_id`  
+ 2.  Matching `route_id` only (no `origin_id` or `destination_id` specified)  
+ 3.  Matching `origin_id` and `destination_id` only (no `route_id` specified)  
+ 4.  No match (e.g. `fare_id` specified with no other columns)  
 
 File MUST contain the following attributes:
 
