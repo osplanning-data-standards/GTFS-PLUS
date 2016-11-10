@@ -1,4 +1,4 @@
-## Additional Fare Rules
+## Fare Periods
 
 Adds a start and end time to fare rules.
 
