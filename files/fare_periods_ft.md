@@ -4,7 +4,7 @@ Adds a start and end time to fare rules.
 
 Examples of how to specify various fare schemes can be found in the [fares page](../fares.md).
 
- *  Filename MUST be `fare_rules_ft.txt`
+ *  Filename MUST be `fare_periods_ft.txt`
  *  File MUST contain a record for each fare rule start and end time.
  *  File MUST be a valid CSV file.
  *  The first line of each file MUST contain case-sensitive field names.
