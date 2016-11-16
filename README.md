@@ -3,8 +3,8 @@
 
 A GTFS-based data transit network data standard suitable for dynamic transit modeling.
 
-**version**: 0.2.9 
-**updated**: 17 February 2016  
+**version**: 0.3.0
+**updated**: 03 November 2016  
 **created**: 09 July 2015  
 **authors**:  
 
@@ -37,6 +37,7 @@ consistent with [GTFS]
 -  `0.2.7`: eliminates `fare_class` as an optional variable in `routes_ft.txt` to eliminate ambiguity
 -  `0.2.8`: requires `transfers_ft` because it has distance. Blank `schedule_precedence` is no precedence either way.  Defaults times in `fare_rules_ft` can have label `default`.
 -  `0.2.9`: many clarifications. Use `lot_lon` rather than `lot_long` in `drive_access_points_ft` for GTFS consistency.  
+-  `0.3.0`: clarifications. Changed definition of `end_time`. Renamed `fare_class` to `fare_period`. Made optional files optional.
 
 # Specification
 
@@ -55,10 +56,8 @@ Filename 			| Description
 [`trips_ft.txt`](/files/trips_ft.md)		| additional transit vehicle trip information		
 [`routes.txt`](/files/routes.md)			| transit routes									
 [`routes_ft.txt`](/files/routes_ft.md)		| additional transit route information				
-[`stops.txt`](/files/stops.md)				| transit stops and stations						
-[`stops_ft.txt`](/files/stops_ft.md)		| additional transit stop and station information	
-[`stop_times.txt`](/files/stop_times.md)	| transit trip stop times							
-[`stop_times_ft.txt`](/files/stop_times_ft.md)	| additional transit trip stop time information		
+[`stops.txt`](/files/stops.md)				| transit stops and stations											
+[`stop_times.txt`](/files/stop_times.md)	| transit trip stop times  		
 [`vehicles_ft.txt`](/files/vehicles_ft.md)	| transit vehicles									
 [`agency.txt`](/files/agency.md)			| transit agency									
 [`calendar.txt`](/files/calendar.md)		| transit schedule calendar							
@@ -67,14 +66,17 @@ A GTFS-PLUS transit network MAY include the following files:
 
 Filename 					| Description										
 ----------					| -------------		
-[`drive_access_ft.txt`](/files/drive_access_ft.md)		| drive access links
-[`bike_access_ft.txt`](/files/bike_access_ft.md)		| walk access links
-[`drive_access_points_ft.txt`](/files/drive_access_points_ft.md) | park and ride access links; must be included if provide drive access links.
-[`shapes.txt`](/files/shapes.md)					| transit route shape points
-[`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)			| fare attributes
-[`fare_rules.txt`](/files/fare_rules.md)					| fare rules
-[`fare_rules_ft.txt`](/files/fare_rules_ft.md)				| additional fare rules
-[`fare_transfer_rules_ft.txt`](/files/fare_transfer_rules_ft.md)	| fare transfer rules
+[`drive_access_ft.txt`](/files/drive_access_ft.md)					| drive access links  
+[`bike_access_ft.txt`](/files/bike_access_ft.md)					| walk access links  
+[`drive_access_points_ft.txt`](/files/drive_access_points_ft.md) 	| park and ride access links; must be included if provide drive access links.  
+[`shapes.txt`](/files/shapes.md)								 	| transit route shape points  
+[`stops_ft.txt`](/files/stops_ft.md)						    	| additional transit stop and station information	
+[`stop_times_ft.txt`](/files/stop_times_ft.md)	                    | additional transit trip stop time information	 
+[`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)			| fare attributes  
+[`fare_rules.txt`](/files/fare_rules.md)							| fare rules  
+[`fare_rules_ft.txt`](/files/fare_rules_ft.md)						| additional fare rules  
+[`fare_transfer_rules_ft.txt`](/files/fare_transfer_rules_ft.md)	| fare transfer rules  
+[`zones_ft.txt`](/files/zones_ft.md)	                            | zone locations 
 
 # Fares
 

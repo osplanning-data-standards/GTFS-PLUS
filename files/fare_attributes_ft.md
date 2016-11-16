@@ -21,7 +21,7 @@ File MUST contain the following attributes:
 
 Required Attributes	| Description										
 ----------			| -------------		
-`fare_class`		| Contains an ID that uniquely identifies the fare class.  The `fare_class` is dataset unique.
+`fare_period`		| Contains an ID that uniquely identifies the fare period.  The `fare_period` is dataset unique.
 `price`				| Float fare price in the unit specified by `currency_type`
 `currency_type`		| Defines the currency used to pay the fare in [ISO 4217](http://en.wikipedia.org/wiki/ISO_4217) alphabetical currency codes
 `payment_method`	| When the fare must be paid:
@@ -30,7 +30,8 @@ Required Attributes	| Description
 `transfers`			| Number of transfers permitted on this fare:
 -					| 0 - none
 -					| 1 - one
--					| 2 - two
+-					| 2 - two  
+-				    | (empty): If this field is empty, unlimited transfers are permitted  
 
 File MAY contain the following attributes:
 

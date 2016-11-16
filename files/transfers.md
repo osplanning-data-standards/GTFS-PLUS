@@ -4,8 +4,6 @@ Filename: `transfers.txt`
  *  Filename MUST be `transfers.txt`
  *  File MUST contain a record for each pair of transit stops that can be transferred between 
  on foot.
- *  File MUST contain a record for each Park and Ride:transit stop pair that can be accessed on foot.
- *  File MUST contain a record for each Kiss and Ride:transit stop pair that can be accessed on foot.
  *  File MUST be a valid CSV file.
  *  The first line of each file MUST contain case-sensitive field names.
  *  Field names MUST NOT contain tabs, carriage returns or new lines.

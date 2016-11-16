@@ -2,7 +2,8 @@
 Filename: `walk_access_ft.txt`
 
  *  Filename MUST be `walk_access_ft.txt`
- *  File MUST contain a record for each transit stop that can be walked to from each TAZ.
+ *  File MUST contain a record for TAZ to accessible transit stop.
+ *  File MUST contain a record for each transit stop to all accessible TAZs.
  *  File MUST be a valid CSV file.
  *  The first line of each file MUST contain case-sensitive field names.
  *  Field names MUST NOT contain tabs, carriage returns or new lines.

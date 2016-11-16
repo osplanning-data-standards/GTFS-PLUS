@@ -20,7 +20,7 @@ Required Attributes	| Description
 `cost`				| Float cost in the unit specified by `currency_type` variable in [`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)
 `travel_time`		| Float driving time in minutes between TAZ and lot.
 `start_time`		| HH:MM:SS from midnight.  If blank, it is assumed that this is the base condition and other time of days will override it.
-`end_time`			| HH:MM:SS from midnight.  If blank, it is assumed that this is the base condition and other time of days will override it.
+`end_time`			| HH:MM:SS from midnight.  Time when drive access link is no longer valid (i.e. if it ends at 11:59:59, then `end_time` would be 12:00:00) If blank, it is assumed that this is the base condition and other time of days will override it.
 
 File MAY contain the following attributes:
 

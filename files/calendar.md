@@ -12,6 +12,8 @@ File MUST contain the following attributes:
 Required Attributes	| Description										
 ----------			| -------------		
 `service_id`		| ID that uniquely identifies the transit agency.
+`start_date`		| Start date of service in YYYMMDD format.  
+`end_date`			| End date of service [ which is included in the service interval ] in YYYMMDD format.  
 `monday`			| 0 or 1. Binary value on whether this service pattern is available on Mondays.
 `tuesday`			| 0 or 1. Binary value on whether this service pattern is available on Tuesdays.
 `wednesday`			| 0 or 1. Binary value on whether this service pattern is available on Wednesdays.
