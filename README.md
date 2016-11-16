@@ -76,6 +76,7 @@ Filename 					| Description
 [`fare_rules.txt`](/files/fare_rules.md)							| fare rules  
 [`fare_rules_ft.txt`](/files/fare_rules_ft.md)						| additional fare rules  
 [`fare_transfer_rules_ft.txt`](/files/fare_transfer_rules_ft.md)	| fare transfer rules  
+[`zones_ft.txt`](/files/zones_ft.md)	                            | zone locations 
 
 # Fares
 
