@@ -14,6 +14,9 @@ Required Attributes	| Description
 ----------			| -------------		
 `taz`				| Zone ID
 `stop_id`			| Stop ID
+`direction`			| String that can have following values:
+-					|    Access
+-					|    Egress
 `dist`				| Walking distance in miles between TAZ and stop.
 
 File MAY contain the following attributes:
