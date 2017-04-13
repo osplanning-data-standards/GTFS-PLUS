@@ -14,8 +14,8 @@ Required Attributes	| Description
 `taz`				| Zone ID
 `lot_id`			| Stop ID
 `direction`			| String that can have following values:
--					|    Access
--					|    Egress
+`-`				  	|    Access
+`-`	    		|    Egress
 `dist`				| Drive distance in miles between TAZ and lot.
 `cost`				| Float cost in the unit specified by `currency_type` variable in [`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)
 `travel_time`		| Float driving time in minutes between TAZ and lot.
