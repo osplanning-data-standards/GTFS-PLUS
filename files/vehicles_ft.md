@@ -24,16 +24,16 @@ Optional Attributes		| Description
 `vehicle_length`		| Float of the vehicle length in feet.
 `platform_height`		| Float of the platform height in inches.
 `propulsion_type`		| String of the name of the propulsion type.  Possible values include:
--						| diesel
--						| bio-diesel
--						| diesel-hybrid
--						| CNG
--						| electric-trolly
+`-`						| diesel
+`-`						| bio-diesel
+`-`						| diesel-hybrid
+`-`						| CNG
+`-`						| electric-trolly
 `wheelchair_capacity`	| Integer of total capacity for wheelchairs on vehicle. Overrides value in trip file.  
--						| Blank - indicates that it is unknown and is treated as infinite.  
--						| 0  - indicates that wheelchairs cannot access this vehicle.
--						| 1+ - number of wheelchairs that can be accommodated
+`-`						| Blank - indicates that it is unknown and is treated as infinite.  
+`-`						| 0  - indicates that wheelchairs cannot access this vehicle.
+`-`						| 1+ - number of wheelchairs that can be accommodated
 `bicycle_capacity`		| Integer representation of [non-folding] bicycles that can be accommodated.  
--						| Blank - indicates that it is unknown and is treated as infinite unless the trip file says that it is not bicycle accessible.
--						| 0  - indicates that bicycles cannot ride on this vehicle.
--						| 1+ - number of bicycles that can be accommodated
+`-`						| Blank - indicates that it is unknown and is treated as infinite unless the trip file says that it is not bicycle accessible.
+`-`						| 0  - indicates that bicycles cannot ride on this vehicle.
+`-`						| 1+ - number of bicycles that can be accommodated
