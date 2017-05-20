@@ -16,11 +16,9 @@ File MAY contain the following attributes:
 
 | Optional Attributes		| Description										
 | ----------				| -------------		
-| `shelter`			| String describing the shelter facility at the station. Valid entries include: 
-| 						| *blank - no information* <br> *inside* <br> *sheltered* <br> *inside* <br> *none*
+| `shelter`			| String describing the shelter facility at the station. Valid entries include: <br> *blank - no information* <br> *inside* <br> *sheltered* <br> *inside* <br> *none*
 `lighting`			| Boolean indicating presence of lighting.
-`bike_parking`		| String describing bike parking facilities at station. Valid entires include:
-| 						| *blank - no information* <br> *none* <br> *standard_outside* <br> *standard_inside* <br> *lockers* <br> *valet*
+`bike_parking`		| String describing bike parking facilities at station. Valid entires include: <br> *blank - no information* <br> *none* <br> *standard_outside* <br> *standard_inside* <br> *lockers* <br> *valet*
 | `bike_share_station`	| Boolean indicating presence of a bike share station.
 | `seating`				| Boolean. Indicates the presence of seating at the station. Stop-level overrides station-level.
 | `platform_height`		| Float-point number in inches. Used with vehicle height to determine level boarding.
