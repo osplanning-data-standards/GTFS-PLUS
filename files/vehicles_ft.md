@@ -37,3 +37,16 @@ File MAY contain the following attributes:
 |	| Blank - indicates that it is unknown and is treated as infinite unless the trip file says that it is not bicycle accessible.
 |	| 0  - indicates that bicycles cannot ride on this vehicle.
 |	| 1+ - number of bicycles that can be accommodated
+| `boarding_door` | String identifying the door(s) used for boarding
+| | Blank - indicates that it is unknown, assumed to be front door boarding
+| | "Front Door" - indicates boarding is only allowed at the front door
+| | "All"        - indicates boarding is allowed at all doors
+| `fare_payment` 
+| | "None"
+| | "Visual inspection"
+| | "Single ticket/token"
+| | "Exact change"
+| | "Ticket validator"
+| | "Magstripe card"
+| | "Smart card"
+| | "User-defined"
