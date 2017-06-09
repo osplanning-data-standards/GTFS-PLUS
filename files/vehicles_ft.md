@@ -57,3 +57,6 @@ File MAY contain the following attributes:
 | `percent_using_farebox` | floating point number between 0 and 1 denoting the percent of people boarding who pay a cash fare at the farebox
 | `door_time` | integer representation of seconds for doors to open and close, usually between 2 and 5 seconds
 | `number_loading_areas` |
+| `max_speed` | maximum speed in MPH of the vehicle
+| `acceleration` | average acceleration in miles/hour^2
+| `deceleration` | average deceleration in miles/hour^2
