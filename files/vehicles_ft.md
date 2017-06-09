@@ -33,7 +33,7 @@ File MAY contain the following attributes:
 |	| `Blank` - indicates that it is unknown and is treated as infinite.  
 | | `0`  - indicates that wheelchairs cannot access this vehicle.
 | | `1+` - number of wheelchairs that can be accommodated
-| `bicycle_capacity`		| integer representation of [non-folding] bicycles that can be accommodated.  
+| `bicycle_capacity`		| Integer representation of [non-folding] bicycles that can be accommodated.  
 |	| `Blank` - indicates that it is unknown and is treated as infinite unless the trip file says that it is not bicycle accessible.
 |	| `0`  - indicates that bicycles cannot ride on this vehicle.
 |	| `1+` - number of bicycles that can be accommodated
@@ -54,9 +54,9 @@ File MAY contain the following attributes:
 | | `level`
 | | `stairs`
 | | `steep_stairs` |
-| `percent_using_farebox` | floating point number between 0 and 1 denoting the percent of people boarding who pay a cash fare at the farebox
-| `door_time` | integer representation of seconds for doors to open and close, usually between 2 and 5 seconds
+| `percent_using_farebox` | Floating point number between 0 and 1 denoting the percent of people boarding who pay a cash fare at the farebox
+| `door_time` | Integer representation of seconds for doors to open and close, usually between 2 and 5 seconds
 | `number_loading_areas` |
-| `max_speed` | maximum speed in MPH of the vehicle
-| `acceleration` | average acceleration in miles/hour^2
-| `deceleration` | average deceleration in miles/hour^2
+| `max_speed` | Integer maximum speed in MPH of the vehicle
+| `acceleration` | Average acceleration in miles/hour^2
+| `deceleration` | Average deceleration in miles/hour^2
