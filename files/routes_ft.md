@@ -31,4 +31,4 @@ File MAY contain the following attributes:
 Optional Attributes	| Description										
 ----------			| -------------		
 `proof_of_payment`	| A boolean value indicating if the route has fare enforcement through random inspection (true) or if the driver oversees payment (false). 
-`percent_using_farebox` | Floating point value between 0 and 1 indicating the percent of passengers boarding who pay a cash fare at the farebox (as opposed to paying via Smart Card or other payment method. This value will be overridden by `percent_using_farebox` in `stop_times_ft`, if provided.
+`percent_using_farebox` | Floating point value between 0 and 1 indicating the percent of passengers boarding who pay a cash fare at the farebox (as opposed to paying via Smart Card or other payment method. This value will be overridden by `percent_using_farebox` in `stop_times_ft`, if provided.   This is a TCQSM parameter used to calculate dwell time.
