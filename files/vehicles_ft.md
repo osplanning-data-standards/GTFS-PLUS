@@ -42,19 +42,19 @@ File MAY contain the following attributes:
 | | `front` - indicates boarding is only allowed at the front door
 | | `all` - indicates boarding is allowed at all doors
 | `fare_payment_method` | Method of payment accepted.  Each method corresponds to a default boarding time value in seconds/passenger
-| | `none` | No fare payment. Default value 1.75 s/p.
-| | `visual_inspection` | Visual inspection of a paper pass, paper transfer, or mobile phone pass. Default value 2.0 s/p.
-| | `single_ticket_token` | A single ticket or token placed into a farebox. Default value 3.0 s/p.
-| | `exact_change` | Exact change paid into a farebox. Default value 4.5 s/p.
-| | `ticket_validator` | Ticket placed into mechanical ticket validator. Default value 4.0 s/p.
-| | `magstripe_card` | Magnetic strip card swiped through validator. Default value 5.0 s/p.
-| | `smart_card` | Smart card tapped against validator. Default value 2.75 s/p.
-| | `user_defined` | If this is selected, a value should be provided in the `user_defined_fare_payment` field.
+| | `none` - indicates no fare payment. Default value 1.75 s/p.
+| | `visual_inspection` - indicates visual inspection of a paper pass, paper transfer, or mobile phone pass. Default value 2.0 s/p.
+| | `single_ticket_token` - indicates a single ticket or token placed into a farebox. Default value 3.0 s/p.
+| | `exact_change` - indicates exact change paid into a farebox. Default value 4.5 s/p.
+| | `ticket_validator` - indicates a ticket placed into mechanical ticket validator. Default value 4.0 s/p.
+| | `magstripe_card` - indicates a magnetic strip card swiped through validator. Default value 5.0 s/p.
+| | `smart_card` - indicates a smart card tapped against validator. Default value 2.75 s/p.
+| | `user_defined` - if selected, a value should be provided in the `user_defined_fare_payment` field.
 | `user_defined_fare_payment` | Floating point representation of boarding time due to the type of fare payment, in seconds/passenger.  Should be blank unless `fare_payment_method` is `user_defined`
 | `boarding_height` | 
-| | `level` | The bus floor and loading platform are at the same height.
-| | `stairs` | The bus floor is above the loading platform height, and/or there are stairs from the door to the bus floor.
-| | `steep_stairs` | There are steep stairs to a bus floor, as typically found on a high-floor commuter bus.
+| | `level` - indicates the bus floor and loading platform are at the same height.
+| | `stairs` - indicates the bus floor is above the loading platform height, and/or there are stairs from the door to the bus floor.
+| | `steep_stairs` - indicates there are steep stairs to a bus floor, as typically found on a high-floor commuter bus.
 | `percent_using_farebox` | Floating point number between 0 and 1 denoting the percent of people boarding who pay a cash fare at the farebox
 | `door_time` | Integer representation of seconds for doors to open and close, usually between 2 and 5 seconds
 | `number_loading_areas` |
