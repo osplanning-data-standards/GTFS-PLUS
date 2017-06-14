@@ -35,5 +35,5 @@ Optional Attributes		| Description
 `platform_height`		| Float-point number in inches. Used with vehicle height to determine level boarding.
 `level`				| Integer, floors from street level.  Indicates how far up or below street level the stop is relative to the station and the station relative to the street level.
 `off_board_payment`	| Boolean indicating if there are fare gates or tagging stations before the platform.  Can be overriden by [`stop_times_ft`](stop_times_ft.md) value for a specific service.
-`number_loading_areas` | Integer indicating the number of bus berths at the stop or station
+`number_loading_areas` | Integer indicating the number of bus berths at the stop or station. This is a TCQSM parameter used to calculate dwell time.
 
