@@ -57,4 +57,6 @@ File MAY contain the following attributes:
 | | `steep_stairs` - indicates there are steep stairs to a bus floor, as typically found on a high-floor commuter bus.
 | `percent_using_farebox` | Floating point number between 0 and 1 denoting the percent of people boarding who pay a cash fare at the farebox
 | `door_time` | Integer representation of seconds for doors to open and close, usually between 2 and 5 seconds
-| `number_loading_areas` |
+| `max_speed` | Integer value indicating the maximum speed in MPH of the vehicle
+| `acceleration` | Float value indicating the acceleration of the vehicle in miles/hour/second
+| `deceleration` | Float value indicating the deceleration of the vehicle in miles/hour/second
