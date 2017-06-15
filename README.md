@@ -3,8 +3,8 @@
 
 A GTFS-based data transit network data standard suitable for dynamic transit modeling.
 
-**version**: 0.3.0
-**updated**: 03 November 2016  
+**version**: 0.4.0
+**updated**: 15 June 2017 .   
 **created**: 09 July 2015  
 **authors**:  
 
@@ -37,7 +37,8 @@ consistent with [GTFS]
 -  `0.2.7`: eliminates `fare_class` as an optional variable in `routes_ft.txt` to eliminate ambiguity
 -  `0.2.8`: requires `transfers_ft` because it has distance. Blank `schedule_precedence` is no precedence either way.  Defaults times in `fare_rules_ft` can have label `default`.
 -  `0.2.9`: many clarifications. Use `lot_lon` rather than `lot_long` in `drive_access_points_ft` for GTFS consistency.  
--  `0.3.0`: clarifications. Changed definition of `end_time`. Renamed `fare_class` to `fare_period`. Made optional files optional.
+-  `0.3.0`: clarifications. Changed definition of `end_time`. Renamed `fare_class` to `fare_period`. Made optional files optional.   
+-  `0.4.0`: Adds dwell time formulas and variables needed to calculate dwell time based on the [Transit Capacity and Quality of Service Manual](http://www.trb.org/Main/Blurbs/169437.aspx) . 
 
 # Specification
 
@@ -74,7 +75,7 @@ Filename 					| Description
 [`stop_times_ft.txt`](/files/stop_times_ft.md)	                    | additional transit trip stop time information	 
 [`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)			| fare attributes  
 [`fare_rules.txt`](/files/fare_rules.md)							| fare rules  
-[`fare_rules_ft.txt`](/files/fare_rules_ft.md)						| additional fare rules  
+[`fare_periods_ft.txt`](/files/fare_periods_ft.md)						| additional fare rules  
 [`fare_transfer_rules_ft.txt`](/files/fare_transfer_rules_ft.md)	| fare transfer rules  
 [`zones_ft.txt`](/files/zones_ft.md)	                            | zone locations 
 

@@ -14,7 +14,7 @@ Required Attributes	| Description
 `agency_id`			| ID that uniquely identifies the transit agency.
 `agency_name`		| Contains full name of transit agency.
 `agency_url`		| String. Fully qualified URL of agency.
-`agency_timezone`	| String. [List of valid values](http//en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+`agency_timezone`	| String. [List of valid values](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
 
 File MAY contain the following attributes:
 
