@@ -22,15 +22,6 @@ Optional Attributes		| Description
 `trip_short_name`		| Text that appears in schedules and sign boards.
 `block_id`				| Two or more sequential trips made using same vehicle where passenger can transfer by staying on same vehicle. `block_id` must be referenced by two or more trips in trips.txt.
 `shape_id`				| Defines shape for the trip from [`shapes.txt`](shapes.md) file.
-`wheelchair_accessible`	| Is this transit vehicle trip wheelchair accessible: 
-				    -	|	  *0 - no accessibility info*
-					-	|	  *1 - vehicle on this trip can accommodate at least one rider in a wheelchair*
-					-	|	  *2 - no riders in wheelchairs can be accommodated on this trip* 
-`bikes_allowed`			| Does this transit vehicle trip bike allow bikes:
-				    -	|	  *0 - no bike accessibility info*
-				    -	|	  *1 - vehicle on this trip can accommodate at least one bicycle*		
-				    -	|	  *2 - no bicycles can be accommodated on this trip*		    
-`direction_id`			| ID that contains a binary value that indicates the direction of the trip:
-				    -	|	  *0 - travel in one direction*
-				    -	|	  *1 - travel in opposite direction*	
-
+`wheelchair_accessible`	| Is this transit vehicle trip wheelchair accessible: <br> *0 - no accessibility info* <br> *1 - vehicle on this trip can accommodate at least one rider in a wheelchair* <br> *2 - no riders in wheelchairs can be accommodated on this trip*
+`bikes_allowed`			| Does this transit vehicle trip bike allow bikes: <br> *0 - no bike accessibility info* <br> *1 - vehicle on this trip can accommodate at least one bicycle* <br> *2 - no bicycles can be accommodated on this trip*		    
+`direction_id`			| ID that contains a binary value that indicates the direction of the trip: <br> *0 - travel in one direction* <br>*1 - travel in opposite direction*	
