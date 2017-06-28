@@ -52,10 +52,10 @@ File MAY contain the following attributes:
 | | `user_defined` - if selected, a value should be provided in the `user_defined_fare_payment` field.
 | `user_defined_fare_payment` | Floating point representation of boarding time due to the type of fare payment, in seconds/passenger. Should be blank unless `fare_payment_method` is `user_defined`. This is a TCQSM parameter used to calculate dwell time.
 | `boarding_height` | String value indicating the boarding height as one of three categories. This is a TCQSM parameter used to calculate dwell time.
-| | `level` - indicates the bus floor and loading platform are at the same height.
+| | `level` - indicates the bus floor and loading platform are at the same height.  This can also be used for low floor buses.
 | | `stairs` - indicates the bus floor is above the loading platform height, and/or there are stairs from the door to the bus floor.
 | | `steep_stairs` - indicates there are steep stairs to a bus floor, as typically found on a high-floor commuter bus.
 | `door_time` | Integer representation of seconds for doors to open and close, usually between 2 and 5 seconds. This is a TCQSM parameter used to calculate dwell time.
 | `acceleration` | Float value indicating the acceleration of the vehicle in miles/hour/second
 | `deceleration` | Float value indicating the deceleration of the vehicle in miles/hour/second
-| `dwell_formula` | String value containing a formula to calculate dwell time.
+| `dwell_formula` | String value. Can specify a scalar in seconds(e.g., 0, 30), an equation based on boards and alights that returns seconds, or a string to specify a default calculation type (e.g., "TCQSM" to refer to the Transit Capacity and Quality of Service Manual). If the column or value are left blank, or specified as `static`, no assumption about dwell time is made.
