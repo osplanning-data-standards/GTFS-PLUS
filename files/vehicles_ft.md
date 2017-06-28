@@ -17,10 +17,10 @@ File MAY contain the following attributes:
 |Optional Attributes		| Description										
 | ----------				| -------------		
 | `vehicle_description`	| String description of the vehicle. For example, "metro-articulated"
-| `seated_capacity`		| Integer of total seated capacity per vehicle. If specified, this will override capacity from trip file.
-| `standing_capacity`		| Integer of number of standing riders at capacity.  If specified, this will override capacity from trip file.
+| `seated_capacity`		| Integer of total seated capacity per vehicle. 
+| `standing_capacity`	| Integer of number of standing riders at capacity.  
 | `number_of_doors`		| Integer of number of doors.
-| `max_speed`				| Float of the maximum speed of the vehicle in miles per hour.
+| `max_speed`			| Float of the maximum speed of the vehicle in miles per hour.
 | `vehicle_length`		| Float of the vehicle length in feet.
 | `platform_height`		| Float of the platform height in inches.
 | `propulsion_type`		| String of the name of the propulsion type.  Possible values include:
@@ -56,7 +56,6 @@ File MAY contain the following attributes:
 | | `stairs` - indicates the bus floor is above the loading platform height, and/or there are stairs from the door to the bus floor.
 | | `steep_stairs` - indicates there are steep stairs to a bus floor, as typically found on a high-floor commuter bus.
 | `door_time` | Integer representation of seconds for doors to open and close, usually between 2 and 5 seconds. This is a TCQSM parameter used to calculate dwell time.
-| `max_speed` | Integer value indicating the maximum speed in MPH of the vehicle
 | `acceleration` | Float value indicating the acceleration of the vehicle in miles/hour/second
 | `deceleration` | Float value indicating the deceleration of the vehicle in miles/hour/second
 | `dwell_formula` | String value containing a formula to calculate dwell time.
