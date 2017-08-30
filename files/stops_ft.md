@@ -20,7 +20,6 @@ Optional Attributes		| Description
 `-` | `blank` - no information
 `-` | `inside`
 `-` | `sheltered`
-`-` | `inside`
 `-` | `none`
 `lighting`			  | Boolean indicating presence of lighting.
 `bike_parking`		| String describing bike parking facilities at station. Valid entires include:
