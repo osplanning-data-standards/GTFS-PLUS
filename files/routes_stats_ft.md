@@ -9,6 +9,7 @@
 File MUST contain ONE the following TWO sets of required attributes:
 
 **Option One**:
+
 Required Attributes	| Description										
 ----------			| -------------		
 `route_id`			| ID that uniquely identifies a route.
@@ -25,6 +26,7 @@ Required Attributes	| Description
 `sunday`			| 0 or 1. A binary value indicating whether route statistics include Sundays.
 
 **Option Two**:
+
 Required Attributes	| Description										
 ----------			| -------------		
 `service_id`		| ID that uniquely identifies a service span in `calendar.txt`.
