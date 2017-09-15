@@ -35,6 +35,13 @@ File MAY contain the following attributes:
 
 Optional Attributes	| Description										
 ----------			| -------------		
-`schedule_time`		| Integer, mean number of minutes from scheduled `arrival_time` at first stop to scheduled `departure_time` at last stop
+`schedule_time`		| Integer, mean number of minutes from scheduled `arrival_time` at first stop to scheduled `departure_time` at last stop.
 `actual_time`		| Integer, mean number of minutes from actual `arrival_time` at first stop to actual `departure_time` at last stop.
+`std_dev`			| Float, standard deviation of `actual_time`.
 `semi_std_dev`		| Float, semi-standard deviation between scheduled and actual route run time.
+`schedule_stop_time`| Integer, mean number of minutes scheduled stop time.
+`actual_stop_time`	| Integer, mean number of minutes actual stop time.
+`stop_delay`		| Integer, mean number of minutes of stop delay.
+`schedule_move_time`| Integer, mean number of minutes scheduled moving time.
+`actual_move_time`	| Integer, mean number of minutes actual moving time.
+`move_delay`		| Integer, mean number of minutes of moving delay.
