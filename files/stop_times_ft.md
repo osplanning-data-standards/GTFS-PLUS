@@ -17,6 +17,8 @@ File MAY contain the following attributes:
 
 Optional Attributes		| Description										
 ----------				| -------------		
+`actual_arrival_time`	| Actual arrival time at a specific stop for a specific trip on a route in HH:MM:SS format measured from midnight.  For trips that span multiple dates, the time should be entered as a value greater than 2400000
+`actual_departure_time`	| Actual departure time at a specific stop for a specific trip on a route in HH:MM:SS format measured from midnight.  For trips that span multiple dates, the time should be entered as a value greater than 2400000
 `pay_at_station`		| Boolean indicating if the passenger can pay at the stop
 `real_time_data`		| Boolean indicating the presences of real time data displayed while waiting.  Stop level overrides station level.
 `front_board_only`		| Boolean indicating the boarding can only be made through the front doors. 
