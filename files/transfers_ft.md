@@ -26,7 +26,7 @@ Optional Attributes	| Description
 `population_density`| Float, people per square mile per mile. Can be measured for the area within ¼ mile, or other.
 `retail_density`	| Float, employees per square mile per mile. Can be measured for the area within ¼ mile, or other.
 `auto_capacity`		| Float, vehicles per hour per mile.  Can be measured for the actual roadway, an area within ¼ mile, or other.
-`indirecctness`		| Float, ratio of the manhattan distance to crow-fly distance.
+`indirectness`		| Float, ratio of the manhattan distance to crow-fly distance.
 `from_route_id`		| The `route_id` of the connection passengers are alighting, if route specific transfer. Null value assumed to be for all.
 `to_route_id`		| The `route_id` of the connection that passengers are boarding. Null value assumed to be for all.
 `schedule_precedence`| Indicates whether the first of second route whose schedule takes precedence and cannot be adjusted. Null value assumed that both are flexible. Can be either:
