@@ -9,8 +9,8 @@ In order to be connected to the transit system, drive access points must be conn
  *  The first line of each file MUST contain case-sensitive field names.
  *  Field names MUST NOT contain tabs, carriage returns or new lines.
 
-Kiss and ride is allowed iff `drop_off` == True (which is the default if not specified)
-Park and ride is allowed iff `capacity` > 0 (the default is zero)
+Kiss and ride is allowed if `drop_off` == True (which is the default if not specified)
+Park and ride is allowed if `capacity` > 0 (the default is zero)
 
 File MUST contain the following attributes:
 
