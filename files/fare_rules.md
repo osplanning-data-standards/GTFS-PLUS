@@ -29,4 +29,4 @@ Optional Attributes	| Description
 `route_id`			| Associates a fare ID with a route ID from the routes file.  If multiple route have the same attributes, create a row for each route.
 `origin_id`			| Origin fare zone ID, referenced from the stops file.  If several origin IDs have the same fare attributes, create a row for each origin ID.
 `destination_id`	| Destination fare zone ID, referenced from the stops file.  If several fare destination IDs have the same fare attributes, create a row for each destination ID.
-`contains_id`		| Associates a fare iD with a zone ID from the stops file and is associated with itineraries that pass through the `contains_id` zone.
+`contains_id`		| Associates a fare ID with a zone ID from the stops file and is associated with itineraries that pass through the `contains_id` zone.
