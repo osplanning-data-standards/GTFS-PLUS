@@ -11,8 +11,8 @@ File MUST contain the following attributes:
 Required Attributes	| Description										
 ----------			| -------------		
 `trip_id`			| ID that uniquely identifies trip
-`arrival_time`		| Arrival time at a specific stop for a specific trip on a route in HH:MM:SS format measured from midnight.  For trips that span multiple dates, the time should be entered as a value greater than 2400000
-`departure_time`	| Departure time at a specific stop for a specific trip on a route in HH:MM:SS format measured from midnight.  For trips that span multiple dates, the time should be entered as a value greater than 2400000
+`arrival_time`		| Arrival time at a specific stop for a specific trip on a route in HH:MM:SS format measured from midnight.  For trips that span multiple dates, the time should be entered as a value greater than 240000
+`departure_time`	| Departure time at a specific stop for a specific trip on a route in HH:MM:SS format measured from midnight.  For trips that span multiple dates, the time should be entered as a value greater than 240000
 `stop_id`			| ID that uniquely identifies a stop
 `stop_sequence`		| Sequence number on a specific stop within a trip.  The first stop sequence is 1 and subsequent stops in the trip are sequentially numbered.
 
@@ -20,7 +20,7 @@ File MAY contain the following attributes:
 
 | Optional Attributes		| Description										
 | ----------				| -------------		
-| `stop_headsign`			| Text that appears on sign that identifies the trips destination to passengers.  use this field to override default headsign when it changes at stops.
+| `stop_headsign`			| Text that appears on sign that identifies the trips destination to passengers.  Use this field to override default headsign when it changes at stops.
 | `pickup_type`			| Type of pickup:
 | 						| *0/default - regular pickup*
 | 						| *1 - no pickup available*
