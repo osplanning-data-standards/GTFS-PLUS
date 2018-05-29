@@ -23,4 +23,5 @@ Optional Attributes	| Description
 `agency_lang`		| String. Two-letter, [ISO 639-1 code](http://www.loc.gov/standards/iso639-2/php/code_list.php) for primary language used by agency.  Case-insensitive (both EN and en are accepted)
 `agency_phone`		| String. Phone number for agency.
 `agency_fare_url`	| String. URL of where fares are defined.
+`agency_email`	| String. Contains a single valid email address actively monitored by the agency’s customer service department.
 
