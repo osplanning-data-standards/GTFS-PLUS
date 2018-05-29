@@ -20,7 +20,7 @@ File MAY contain the following attributes:
 
 Optional Attributes	| Description										
 ----------			| -------------		
-`agency_lang`		| String. Two-letter, ISO 639-1 code for primary language used by agency.  Case-insensitive (both EN and en are accepted)
+`agency_lang`		| String. Two-letter, [ISO 639-1 code](http://www.loc.gov/standards/iso639-2/php/code_list.php) for primary language used by agency.  Case-insensitive (both EN and en are accepted)
 `agency_phone`		| String. Phone number for agency.
 `agency_fare_url`	| String. URL of where fares are defined.
 
