@@ -27,8 +27,8 @@ Optional Attributes	| Description
 `name`				| String name of the lot.
 `drop_off`			| Boolean, if not specified assumed to be true to indicated that drop-off/pick-ups are allowed.
 `capacity`			| Integer.  Represents number of parking spaces at park and ride.  If not specified, assumed to be zero and no parking is allowed.
-`hourly_cost`		| Hourly cost to park in the unit specified by `currency_type` variable in [`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)
-`max_cost`			| Maximum daily cost to park  in the unit specified by `currency_type` variable in [`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)
+`hourly_cost`		| Float. Hourly cost to park in the unit specified by `currency_type` variable in [`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)
+`max_cost`			| Float. Maximum daily cost to park  in the unit specified by `currency_type` variable in [`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)
 `type`				| String, with possible values of: 
 -					|    surface
 -					|    underground
