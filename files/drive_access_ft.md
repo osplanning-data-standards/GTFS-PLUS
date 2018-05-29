@@ -16,9 +16,9 @@ Required Attributes	| Description
 `direction`			| String that can have following values:
 `-`				  	  |    Access
 `-`	    		    |    Egress
-`dist`				  | Drive distance in miles between TAZ and lot.
-`cost`				  | Float cost in the unit specified by `currency_type` variable in [`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)
-`travel_time`		| Float driving time in minutes between TAZ and lot.
+`dist`				  | Float. Drive distance in miles between TAZ and lot.
+`cost`				  | Float. Cost in the unit specified by `currency_type` variable in [`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)
+`travel_time`		| Float. Driving time in minutes between TAZ and lot.
 `start_time`		| HH:MM:SS from midnight.  If blank, it is assumed that this is the base condition and other time of days will override it.
 `end_time`			| HH:MM:SS from midnight.  Time when drive access link is no longer valid (i.e. if it ends at 11:59:59, then `end_time` would be 12:00:00) If blank, it is assumed that this is the base condition and other time of days will override it.
 
