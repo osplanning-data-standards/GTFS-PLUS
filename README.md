@@ -74,7 +74,8 @@ Filename 					| Description
 [`shapes.txt`](/files/shapes.md)								 	| transit route shape points  
 [`stops_ft.txt`](/files/stops_ft.md)						    	| additional transit stop and station information	
 [`stop_times_ft.txt`](/files/stop_times_ft.md)	                    | additional transit trip stop time information	 
-[`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)			| fare attributes  
+[`fare_attributes.txt`](/files/fare_attributes.md)			| basic fare attributes  
+[`fare_attributes_ft.txt`](/files/fare_attributes_ft.md)			| additional fare attributes  
 [`fare_rules.txt`](/files/fare_rules.md)							| fare rules  
 [`fare_periods_ft.txt`](/files/fare_periods_ft.md)						| additional fare rules  
 [`fare_transfer_rules_ft.txt`](/files/fare_transfer_rules_ft.md)	| fare transfer rules  
