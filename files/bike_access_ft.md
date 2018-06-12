@@ -26,7 +26,7 @@ Optional Attributes	| Description
 `cycletrack_dist`	| Float, distance in miles that is an on-street separated cycletrack.
 `bike_lane_dist`	| Float, distance in miles that is in a bike lane.
 `bike_route_dist`	| Float, distance in miles that is a signed bike route.
-`num_left_turns`	| Int, number of left turns.
-`num_right_turns`	| Int, number of right turns.
-`num_thru`			| Int, number of intersections that are thru.
-`num_signals`		| Int, number of traffic signals along route.
+`num_left_turns`	| Integer, number of left turns.
+`num_right_turns`	| Integer, number of right turns.
+`num_thru`			| Integer, number of intersections that are thru.
+`num_signals`		| Integer, number of traffic signals along route.

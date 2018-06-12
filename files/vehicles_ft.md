@@ -10,33 +10,33 @@ File MUST contain the following attributes:
 
 Required Attributes	| Description										
 ----------			| -------------		
-`vehicle_name`		| String that uniquely identifies vehicle type
+`vehicle_name`		| String. Uniquely identifies vehicle type
 
 File MAY contain the following attributes:
 
 |Optional Attributes		| Description										
 | ----------				| -------------		
-| `vehicle_description`	| String description of the vehicle. For example, "metro-articulated"
-| `seated_capacity`		| Integer of total seated capacity per vehicle. 
-| `standing_capacity`	| Integer of number of standing riders at capacity.  
-| `number_of_doors`		| Integer of number of doors.
-| `max_speed`			| Float of the maximum speed of the vehicle in miles per hour.
-| `vehicle_length`		| Float of the vehicle length in feet.
-| `platform_height`		| Float of the platform height in inches.
-| `propulsion_type`		| String of the name of the propulsion type.  Possible values include:
+| `vehicle_description`	| String. Description of the vehicle. For example, "metro-articulated"
+| `seated_capacity`		| Integer. Total seated capacity per vehicle. 
+| `standing_capacity`	| Integer. Number of standing riders at capacity.  
+| `number_of_doors`		| Integer. Number of doors.
+| `max_speed`			| Float. Maximum speed of the vehicle in miles per hour.
+| `vehicle_length`		| Float. Vehicle length in feet.
+| `platform_height`		| Float. Platform height in inches.
+| `propulsion_type`		| String. Name of the propulsion type.  Possible values include:
 |	| `diesel`
 | | `bio-diesel`
 | | `diesel-hybrid`
 | | `CNG`
 |	| `electric-trolly`
-| `wheelchair_capacity`	| Integer of total capacity for wheelchairs on vehicle. Overrides value in trip file.  
+| `wheelchair_capacity`	| Integer. Total capacity for wheelchairs on vehicle. Overrides value in [`trips.txt`](trips.md) file.  
 |	| `Blank` - indicates that it is unknown and is treated as infinite.  
 | | `0`  - indicates that wheelchairs cannot access this vehicle.
-| | `1+` - number of wheelchairs that can be accommodated
-| `bicycle_capacity`		| Integer representation of [non-folding] bicycles that can be accommodated.  
+| | `1+` - number of wheelchairs that can be accommodated.
+| `bicycle_capacity`		| Integer.  Number of _non-folding_ bicycles that can be accommodated.
 |	| `Blank` - indicates that it is unknown and is treated as infinite unless the trip file says that it is not bicycle accessible.
 |	| `0`  - indicates that bicycles cannot ride on this vehicle.
-|	| `1+` - number of bicycles that can be accommodated
+|	| `1+` - number of bicycles that can be accommodated.
 | `boarding_door` | String value identifying the door(s) used for boarding. This is a TCQSM parameter used to calculate dwell time.
 | | `Blank` - indicates that it is unknown, assumed to be front door boarding
 | | `front` - indicates boarding is only allowed at the front door
@@ -56,6 +56,6 @@ File MAY contain the following attributes:
 | | `stairs` - indicates the bus floor is above the loading platform height, and/or there are stairs from the door to the bus floor.
 | | `steep_stairs` - indicates there are steep stairs to a bus floor, as typically found on a high-floor commuter bus.
 | `door_time` | Integer representation of seconds for doors to open and close, usually between 2 and 5 seconds. This is a TCQSM parameter used to calculate dwell time.
-| `acceleration` | Float value indicating the acceleration of the vehicle in miles/hour/second
-| `deceleration` | Float value indicating the deceleration of the vehicle in miles/hour/second
-| `dwell_formula` | String value. Can specify a scalar in seconds(e.g., 0, 30), an equation based on boards and alights that returns seconds, or a string to specify a default calculation type (e.g., "TCQSM" to refer to the Transit Capacity and Quality of Service Manual). If the column or value are left blank, or specified as `static`, no assumption about dwell time is made.
+| `acceleration` | Float. alue indicating the acceleration of the vehicle in miles/hour/second
+| `deceleration` | Float. Value indicating the deceleration of the vehicle in miles/hour/second
+| `dwell_formula` | String. Can specify a scalar in seconds(e.g., 0, 30), an equation based on boards and alights that returns seconds, or a string to specify a default calculation type (e.g., "TCQSM" to refer to the Transit Capacity and Quality of Service Manual). If the column or value are left blank, or specified as `static`, no assumption about dwell time is made.
